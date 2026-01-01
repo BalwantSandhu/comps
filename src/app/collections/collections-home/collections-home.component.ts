@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { TableComponent } from "../table/table.component";
 import { DividerComponent } from "../../shared/divider/divider.component";
-import { NgClass } from "../../../../node_modules/@angular/common/common_module.d-NEF7UaHr";
+import { NgClass } from "@angular/common";
 
 @Component({
   selector: 'app-collections-home',
