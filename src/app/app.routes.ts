@@ -23,6 +23,12 @@ export const routes: Routes = [
         .then(c => c.collectionsRoutes)
     },
     {
+        path: 'views',
+        loadChildren: () =>
+        import('./views/views.routes')
+        .then(c => c.viewsroutes)
+    },
+    {
         path: '',
         loadComponent: () =>
             import('./home/home.component')
