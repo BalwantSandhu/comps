@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { CollectionsRoutingModule } from "../../collections/collections-routing.module";
 
 @Component({
   selector: 'app-divider',
-  imports: [CollectionsRoutingModule],
+  imports: [],
   templateUrl: './divider.component.html',
   styleUrl: './divider.component.css'
 })
