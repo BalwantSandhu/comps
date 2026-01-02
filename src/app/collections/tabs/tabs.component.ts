@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { ModsRoutingModule } from "../../mods/mods-routing.module";
-
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-tabs',
-  imports: [ModsRoutingModule],
+  imports: [RouterOutlet],
   templateUrl: './tabs.component.html',
   styleUrl: './tabs.component.css'
 })

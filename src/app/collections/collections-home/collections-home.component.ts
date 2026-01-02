@@ -3,13 +3,14 @@ import { TableComponent } from "../table/table.component";
 import { DividerComponent } from "../../shared/divider/divider.component";
 import { NgClass } from "@angular/common";
 import { BiographyComponent } from "../biography/biography.component";
-import { ModsRoutingModule } from "../../mods/mods-routing.module";
 import { TabsComponent } from "../tabs/tabs.component";
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+
 
 
 @Component({
   selector: 'app-collections-home',
-  imports: [TableComponent, DividerComponent, NgClass, BiographyComponent, ModsRoutingModule, TabsComponent],
+  imports: [TableComponent, DividerComponent, NgClass, BiographyComponent, TabsComponent, RouterOutlet, RouterLink, RouterLinkActive],
   standalone: true,
   templateUrl: './collections-home.component.html',
   styleUrl: './collections-home.component.css'

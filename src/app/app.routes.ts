@@ -29,6 +29,12 @@ export const routes: Routes = [
         .then(c => c.viewsroutes)
     },
     {
+        path: 'modules',
+        loadChildren: () =>
+        import('./mods/mods.routes')
+        .then(c => c.modsRoutes)
+    },
+    {
         path: '',
         loadComponent: () =>
             import('./home/home.component')
